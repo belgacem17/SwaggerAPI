@@ -11,7 +11,7 @@ namespace GroupsUsers.Models
         public int Id { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string Name { get; set; } 
+        public string Name { get; set; }
         public int GroupId { get; set; }
         [ForeignKey("GroupId")]
         public virtual Groups Groups { get; set; }
